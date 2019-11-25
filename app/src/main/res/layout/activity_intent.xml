@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ActivityIntent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent的简单使用"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_xianshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示Intent"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/btn_yinshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式Intent"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/btn_browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式Intent_调用浏览器"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/btn_browser2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式Intent_调用浏览器2"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/btn_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式Intent_调用拨号"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/btn_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent 传递数据"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/btn_data2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent 传递数据并回传"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+</LinearLayout>

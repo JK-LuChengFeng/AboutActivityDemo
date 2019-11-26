@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -16,12 +17,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
 
-    private Button btn_toast,btn_menu,btn_intent,btn_savedata;
+    private Button btn_toast,btn_menu,btn_intent,btn_savedata,btn_bootmode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        Log.e(TAG, "-------" + this.toString());
+
+        Log.e(TAG, "---------Task id is:" + getTaskId());
 
         initData();
         initView();
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_intent.setOnClickListener(this);
         btn_savedata = findViewById(R.id.btn_savedata);
         btn_savedata.setOnClickListener(this);
+        btn_bootmode = findViewById(R.id.btn_bootmode);
+        btn_bootmode.setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +72,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Activty异常回收数据保存
                 intent.setClass(MainActivity.this,ActivitySaveData.class);
                 startActivity(intent);
+                break;
+            case R.id.btn_bootmode:
+                //Activity启动模式
+                intent.setClass(MainActivity.this,Main2Activity.class);
+                this.startActivity(intent);
                 break;
             default:
                 break;

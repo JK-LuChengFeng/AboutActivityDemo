@@ -10,15 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ActivitySaveData"></activity>
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Main2Activity">
+        <activity
+            android:name=".activity.Main2Activity"
+            android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="com.example.aboutactivitydemo.Main2Acton_START" />
 
@@ -38,6 +41,7 @@
         <activity android:name=".activity.ActivityIntent" />
         <activity android:name=".activity.ActivityMenu" />
         <activity android:name=".activity.ActivityUse" />
+        <activity android:name=".activity.ActivitySaveData"/>
     </application>
 
 </manifest>

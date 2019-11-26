@@ -24,6 +24,11 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+//        Log.e(TAG, "-------" + this.toString());
+        Log.e(TAG, "---------Task id is:" + getTaskId());
+
+
+
         initData();
         initView();
     }
@@ -46,13 +51,14 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()) {
             case R.id.btn_jump:
                 //跳转
-
+                Intent intent = new Intent(Main2Activity.this,Main3Activity.class);
+                startActivity(intent);
                 break;
             case R.id.btn_back:
                 //返回
-                Intent intent = new Intent();
-                intent.putExtra("data3","回传的数据data3");
-                setResult(RESULT_OK,intent);
+//                Intent intent = new Intent();
+//                intent.putExtra("data3","回传的数据data3");
+//                setResult(RESULT_OK,intent);
                 finish();
                 break;
             default:

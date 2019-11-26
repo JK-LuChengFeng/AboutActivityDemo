@@ -47,4 +47,14 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"/>
 
+    <Button
+        android:id="@+id/btn_bootmode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity启动模式"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
 </LinearLayout>

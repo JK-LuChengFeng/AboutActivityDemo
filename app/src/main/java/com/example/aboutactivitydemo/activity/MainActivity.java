@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
 
-    private Button btn_toast,btn_menu,btn_intent;
+    private Button btn_toast,btn_menu,btn_intent,btn_savedata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_menu.setOnClickListener(this);
         btn_intent = findViewById(R.id.btn_intent);
         btn_intent.setOnClickListener(this);
+        btn_savedata = findViewById(R.id.btn_savedata);
+        btn_savedata.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +60,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_intent:
                 //Intent简单使用
                 intent.setClass(MainActivity.this,ActivityIntent.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_savedata:
+                //Activty异常回收数据保存
+                intent.setClass(MainActivity.this,ActivitySaveData.class);
                 startActivity(intent);
                 break;
             default:
